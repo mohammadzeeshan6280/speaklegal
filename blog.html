@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs-SpeakLeagal</title>
+    <link rel="stylesheet" href="assets/css/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="assets\css\style.css">
+    <link rel="stylesheet" href="assets\OwlCarousel2-2.3.4\dist\assets\owl.carousel.css">
+    <link rel="stylesheet" href="assets\OwlCarousel2-2.3.4\dist\assets\owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .blog-section-banner img {
+            width: 100%;
+        }
+
+        .blog-section-heading h2 {
+
+            font-size: 38px;
+
+            font-weight: 700;
+
+        }
+
+
+
+        .blog-section-heading span {
+
+            position: relative;
+
+            text-align: center;
+
+
+
+        }
+
+
+
+
+
+        .blog-section-heading span::after {
+
+            content: "";
+
+            position: absolute;
+
+            top: 50%;
+
+            left: 0%;
+
+            background: #4B6fed;
+
+            width: 155px;
+
+            height: 5px;
+
+        }
+
+
+
+        /* blog-post-section */
+
+        .latest-post {
+
+            padding: 20px 0 20px 115px;
+
+            font-weight: 600;
+
+        }
+
+        .blog-post-section-1 {
+
+            display: flex;
+
+            flex-direction: column;
+
+            justify-content: center !important;
+
+            align-items: center;
+
+        }
+
+
+
+        .blog-post-section {
+
+            position: relative;
+
+            min-height: 100vh;
+
+            width: 100%;
+
+            padding-top: 70px;
+
+            padding-bottom: 140px;
+
+        }
+
+        .blog-post-content h2 {
+
+            font-size: 26px;
+
+            width: 64%;
+
+        }
+
+
+
+        .blog-post-content p {
+
+            width: 64%;
+
+            font-size: 13px;
+
+        }
+
+
+
+        .blog-post-box {
+
+            width: 350px;
+
+            height: 180px;
+
+            background: #fff;
+
+            border-radius: 20px;
+
+            display: flex;
+
+            justify-content: center;
+
+
+
+        }
+
+
+
+
+
+
+
+        .blog-post-content {
+
+            display: flex;
+
+            justify-content: center;
+
+            flex-direction: column;
+
+            align-items: center;
+
+        }
+
+
+
+        .blog-post-banner img {
+
+            z-index: -1;
+
+        }
+
+        .footer-para {
+            font-size: 36px !important;
+        }
+
+        @media screen and (max-width : 567px) {
+
+            .services-page-section p {
+
+                padding: 20px;
+
+            }
+
+            /* Blog Services */
+
+            .blog-section-heading span {
+
+                position: relative;
+
+                text-align: right;
+
+                font-size: 30px;
+
+                padding: 0 6px;
+
+            }
+
+
+
+            .blog-section-heading h2 {
+
+                font-weight: 700;
+
+                font-size: 30px;
+
+                text-align: center;
+
+            }
+
+
+
+            .blog-section-heading span::after {
+
+                content: "";
+
+                position: absolute;
+
+                top: 50%;
+
+                left: 5%;
+
+                background: #4B6fed;
+
+                width: 155px;
+
+                height: 5px;
+
+            }
+
+
+
+            .blog-post-content h2 {
+
+                width: 100%;
+
+                text-align: center;
+
+            }
+
+
+
+            .blog-post-content p {
+
+                width: 100%;
+
+                text-align: center;
+
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <header>
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container-fluid">
+                    <a class="navbar-brand logo" href="index.html">SPEAKLEGAL</a>
+                    <!-- <img src="assets/Images/SPEAKLEGAL.png" alt=""> -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <div class="navbar-toggler-icon">
+                            <!-- <img src="assets\Images\menuicon.png" class="w-100" alt=""> -->
+                            <span class="bar bar1"></span>
+                            <span class="bar bar2"></span>
+                            <span class="bar bar3"></span>
+                        </div>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="mob-nav-head">
+                            <a class="logo mobile-nav-logo" href="index.html">SPEAKLEGAL</a>
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 navigation_links">
+
+                            <li class="nav-item">
+                                <div class="icon-box border-top-0">
+                                    <i class="fa-solid fa-house mob-nav-icon"></i>
+                                    <!-- <img src="assets\Images\homeicon.png" alt=""> -->
+                                </div>
+                                <a class="nav-link active " aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <div class="icon-box">
+                                    <i class="fa-regular fa-handshake"></i>
+                                </div>
+                                <a class="nav-link" href="services.html">
+                                    Services
+                                    <span><i class="fa-solid fa-angle-down" role="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false"></i></span>
+                                </a>
+                                <ul class="dropdown-menu shadow">
+                                    <!-- <li><a class="dropdown-item" href="#"><img src="assets\Images\legaldrafting.png" alt="">Legal Drafting Services</a></li> -->
+                                    <li><a href="legaldrafting.html" class="dropdown-item">
+                                            <img src="assets\Images\legaldrafting.png" alt="">
+                                            <span>Legal Drafting Services</span>
+                                        </a></li>
+                                    <li><a href="divorce.html" class="dropdown-item" style="gap: 31px;">
+                                            <img src="assets\Images\divorcelink.png" alt=""
+                                                style="width: 30px; height: 30px;">
+                                            <span>Divorce and Separation advice</span>
+                                        </a></li>
+                                    <li><a href="consultation.html" class="dropdown-item" style="gap: 31px;">
+                                            <img src="assets\Images\settings.png" style="width: 7%;" alt="">
+                                            <span>Maintenance Case Consultation</span>
+                                        </a></li>
+                                    <li><a href="strategy.html" class="dropdown-item border-0" style="gap: 31px;">
+                                            <img src="assets\Images\Server.png" style="width: 7%;" alt="">
+                                            <span>Litigation Strategy</span>
+                                        </a></li>
+
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <div class="icon-box">
+                                    <i class="fa-solid fa-circle-info"></i>
+                                </div>
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <div class="icon-box">
+                                    <i class="fa-solid fa-phone text-white"></i>
+                                </div>
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                            <li class="nav-item nav-item-last">
+                                <div class="icon-box icon-box-last">
+                                    <i class="fa-solid fa-file-lines text-white"></i>
+                                </div>
+                                <a class="nav-link" href="blog.html">Blog</a>
+                            </li>
+                        </ul>
+
+                        <p class="mob-nav-copyright">All rights reserved © Speaklegal 2024</p>
+
+                        <div class="nav-buttons d-flex justify-content-center">
+                            <button type="button" class="btn custom-btn">Contact Us</button>
+                            <button type="button" class="btn custom-btn-1">Get a Quote</button>
+                        </div>
+
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!--PAGE CONTENT-->
+
+        <!-- Blog Section -->
+
+        <section class="blog-section">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-lg-6 col-md-6 blog-section-page py-4">
+
+                        <div class="blog-section-heading">
+
+                            <h2>Source Of Usefull
+
+                                Our <br> <span style="display: block; color: #4B6fed;">Information</span> </h2>
+
+                            <img src="assets\Images\blog-banner-img-1.png" alt=""
+                                class="d-lg-none d-md-none d-block w-100 py-4">
+
+                            <p class="pt-4">Here, we explore essential tips and insights to help you succeed. Dive into
+                                our latest posts and discover practical advice tailored to your needs. Join our
+                                community of learners and start enhancing your knowledge today!</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 blog-section-banner">
+
+                        <img src="assets\Images\blog-banner-img-1.png" alt="" class="d-none d-lg-block d-md-block">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <section class="blog-post-section">
+
+            <div class="container">
+
+                <div class="row border-3 z-3">
+
+                    <h2 class="z-1 latest-post">Latest Posts</h2>
+
+                    <div class="col-lg-6 col-md-6 col-sm-12 z-1">
+
+                        <div class="blog-post-section-1">
+
+                            <div class="blog-post-box">
+
+                                <img src="assets\Images\blog-img-4.png" alt="">
+
+                            </div>
+
+                            <div class="blog-post-content py-4">
+
+                                <h2>Understanding Your Rights</h2>
+
+                                <p>Explore key legal protections every employee should know to navigate workplace
+                                    challenges confidently.</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-sm-12 z-1">
+
+                        <div class="blog-post-section-1">
+
+                            <div class="blog-post-box">
+
+                                <img src="assets\Images\blog-img-3.png" alt="">
+
+                            </div>
+
+                            <div class="blog-post-content py-4">
+
+                                <h2>Navigating Divorce:</h2>
+
+                                <p>Get practical advice on handling the complexities of divorce proceedings with clarity
+                                    and composure.</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-lg-6 col-md-6 col-sm-12 z-1">
+
+                        <div class="blog-post-section-1">
+
+                            <div class="blog-post-box">
+
+                                <img src="assets\Images\blog-img-2.png" alt="">
+
+                            </div>
+
+                            <div class="blog-post-content py-4">
+
+                                <h2>Real Estate Transactions:</h2>
+
+                                <p>Find out what legal aspects to consider when buying or selling property to make
+                                    informed decisions.</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-sm-12 z-1">
+
+                        <div class="blog-post-section-1">
+
+                            <div class="blog-post-box">
+
+                                <img src="assets\Images\blog-img-1.png" alt="">
+
+                            </div>
+
+                            <div class="blog-post-content py-4">
+
+                                <h2>Consumer Rights</h2>
+
+                                <p>Educate yourself about your legal rights as a consumer and how to exercise them
+                                    effectively.</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="row">
+
+                    <div class="nav-buttons d-flex justify-content-center z-1">
+
+                        <button type="button" class="btn custom-btn">Explore More</button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <img src="assets\Images\curvedbgtop.webp" alt="" class="position-absolute top-0 left-0 w-100 h-100">
+
+        </section>
+
+
+
+        <section class="get-started">
+
+            <div class="container">
+
+                <div class="row gap-5 gap-lg-0 gap-md-0 flex-column-reverse flex-md-row">
+
+                    <div class="col-lg-7 col-md-12 get-started-col-1">
+
+                        <h2 class="fw-bold text-center text-lg-start text-md-start sec-heading">Ready to take the next
+                            step? Click below to <span style="color: #e8505b;">get started.</span></h2>
+
+                        <div class="center-button">
+
+                            <div class="two-layer-btn">
+
+                                <a href="#" class="btn under-layer">Start Now</a>
+
+                                <span><img src="assets\Images\play.webp" alt=""></span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-5  col-md-12 get-started-col-2">
+
+                        <img src="assets\Images\started.jpg" class="get-started-img" alt="">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!--END-->
+        <!-- FOOTER START -->
+        <footer class="position-relative">
+            <div class="container px-0 px-lg-5 px-md-4  py-5">
+                <div class="row gap-3 gap-lg-0 gap-md-0 align-items-center">
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <h2 class="sec-heading text-white footer-para">Discover our full range of services
+                            and see what <span style="color: #e8505b;">we can do</span> for you.
+                        </h2>
+                    </div>
+                    <div
+                        class="col-lg-6 col-md-6 col-12 d-flex justify-content-lg-end justify-content-md-end justify-content-start h-100">
+                        <a href="#" class="footer-btn">Get Started Now</a>
+                    </div>
+                </div>
+            </div>
+            <img src="assets\Images\bluebackcurve.jpg" class="footer-bg" alt="">
+            <div class="container footer-bottom py-5 border-0">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-12 logo-sec pb-5">
+                        <a class="logo footer-logo" href="index.html">SPEAKLEGAL</a>
+                        <p>All rights reserved © Speaklegal 2024</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12  service-sec">
+                        <h2 class="sec-heading text-white pb-4 footer-title">
+                            Our Services
+                        </h2>
+                        <a href="legaldrafting.html">
+                            <p>Legal Drafting Services</p>
+                        </a>
+                        <a href="#">
+                            <p>Divorce and separation advice</p>
+                        </a>
+                        <a href="#">
+                            <p>Maintenance Case Consultation</p>
+                        </a>
+                        <a href="#">
+                            <p>Litigation strategy</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 link-sec py-5 py-lg-0 py-md-0">
+                        <h2 class="sec-heading text-white d-lg-none d-md-none footer-title">Learn More</h2>
+                        <div class="footer-links d-flex flex-column gap-4 py-5 py-lg-0 py-md-0">
+                            <a href="privacy.html">Privacy Policy </a>
+                            <a href="terms.html">Terms of Service</a>
+                            <a href="#">Refund Policy</a>
+                            <a href="#">Cookie Policy </a>
+                            <a href="#">Disclaimer</a>
+                            <a href="#">Copyright Policy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets\js\jquery-3.7.1.min.js"></script>
+    <script src="assets\OwlCarousel2-2.3.4\dist\owl.carousel.min.js"></script>
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 1,
+                    center: true
+                },
+                768: {
+                    items: 2
+                },
+                1024: {
+                    items: 3
+                }
+            }
+        })
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel();
+        });
+    </script>
+    <script>
+        let faXmark = document.querySelector(".fa-xmark");
+        let mobNav = document.querySelector(".navbar-collapse");
+
+        faXmark.addEventListener("click", function () {
+            mobNav.classList.remove("show");
+        });
+
+        let dropdownToggler = document.querySelector(".fa-angle-down")
+        let dropdown = document.querySelector(".dropdown-menu");
+
+        dropdownToggler.addEventListener("click", function () {
+            dropdown.classList.toggle("show");
+            dropdownToggler.classList.toggle("rotate");
+        })
+    </script>
+
+</body>
+
+</html>

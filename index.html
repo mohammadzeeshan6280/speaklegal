@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speak Leagal</title>
+    <link rel="stylesheet" href="assets/css/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="assets\css\style.css">
+    <link rel="stylesheet" href="assets\OwlCarousel2-2.3.4\dist\assets\owl.carousel.css">
+    <link rel="stylesheet" href="assets\OwlCarousel2-2.3.4\dist\assets\owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div id="main">
+        <header>
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container-fluid">
+                    <a class="navbar-brand logo" href="#">SPEAKLEGAL</a>
+                    <!-- <img src="assets/Images/SPEAKLEGAL.png" alt=""> -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <div class="navbar-toggler-icon">
+                            <!-- <img src="assets\Images\menuicon.png" class="w-100" alt=""> -->
+                            <span class="bar bar1"></span>
+                            <span class="bar bar2"></span>
+                            <span class="bar bar3"></span>
+                        </div>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="mob-nav-head">
+                            <a class="logo mobile-nav-logo" href="index.html">SPEAKLEGAL</a>
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 navigation_links">
+
+                            <li class="nav-item">
+                                <div class="icon-box border-top-0">
+                                    <i class="fa-solid fa-house mob-nav-icon"></i>
+                                    <!-- <img src="assets\Images\homeicon.png" alt=""> -->
+                                </div>
+                                <a class="nav-link active " aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item dropdown" id="desktop-service-link">
+                                <div class="icon-box">
+                                    <i class="fa-regular fa-handshake"></i>
+                                </div>
+                                <a class="nav-link d-inline-block" href="services.html">
+                                    Services
+                                </a>
+                                <span>
+                                    <i class="fa-solid fa-angle-down dropdown-toggler" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false"></i>
+                                </span>
+
+                                <ul class="dropdown-menu shadow">
+                                    <!-- <li><a class="dropdown-item" href="#"><img src="assets\Images\legaldrafting.png" alt="">Legal Drafting Services</a></li> -->
+                                    <li><a href="legaldrafting.html" class="dropdown-item">
+                                            <img src="assets\Images\legaldrafting.png" alt="">
+                                            <span>Legal Drafting Services</span>
+                                        </a></li>
+                                    <li><a href="divorce.html" class="dropdown-item" style="gap: 31px;">
+                                            <img src="assets\Images\divorcelink.png" alt=""
+                                                style="width: 24px; height: 30px;">
+                                            <span>Divorce and Separation advice</span>
+                                        </a></li>
+                                    <li><a href="consultation.html" class="dropdown-item" style="gap: 31px;">
+                                            <img src="assets\Images\settings.png" style="width: 7%;" alt="">
+                                            <span>Maintenance Case Consultation</span>
+                                        </a></li>
+                                    <li><a href="strategy.html" class="dropdown-item border-0" style="gap: 31px;">
+                                            <img src="assets\Images\Server.png" style="width: 7%;" alt="">
+                                            <span>Litigation Strategy</span>
+                                        </a></li>
+
+                                </ul>
+                            </li>
+                            <li class="mob-nav-services-link">
+                                <div class="mob-nav-services-link-with-icon">
+                                    <div class="icon-box service-icon-box ">
+                                        <i class="fa-regular fa-handshake"></i>
+                                    </div>
+
+                                    <a class="nav-link" href="services.html">
+                                        Services
+                                    </a>
+                                    <span>
+                                        <i class="fa-solid fa-angle-down mob-nav-arrow" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false"></i>
+                                    </span>
+                                </div>
+
+                                <div id="internal-link-box">
+                                    <ul id="internal-link-list">
+                                        <li><a href="legaldrafting.html"> Legal Drafting Services1111</a></li>
+                                        <li><a href=""> Divorce and Separation advice</a></li>
+                                        <li><a href="">Maintenance Case Consultation</a>
+                                        </li>
+                                        <li><a href="">Litigation Strategy</a></li>
+
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <div class="icon-box">
+                                    <i class="fa-solid fa-circle-info"></i>
+                                </div>
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <div class="icon-box">
+                                    <i class="fa-solid fa-phone text-white"></i>
+                                </div>
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                            <li class="nav-item nav-item-last">
+                                <div class="icon-box icon-box-last">
+                                    <i class="fa-solid fa-file-lines text-white"></i>
+                                </div>
+                                <a class="nav-link" href="blog.html">Blog</a>
+                            </li>
+                        </ul>
+
+                        <p class="mob-nav-copyright">All rights reserved © Speaklegal 2024</p>
+
+                        <div class="nav-buttons d-flex justify-content-center">
+                            <button type="button" class="btn custom-btn hide-on-sm"><a href="contact.html">
+                                    Contact Us
+                                </a></button>
+                            <button type="button" class="btn custom-btn-1 hide-on-sm"><a href="contact.html">
+                                    Get a Quote
+                                </a></button>
+                        </div>
+
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!--mobile use only-->
+
+        <!--PAGE CONTENT-->
+        <!-- BANNER -->
+        <section class="banner">
+            <div class="container">
+                <div
+                    class="row align-items-center justify-content-between banner-container-row flex-column-reverse flex-lg-row">
+                    <div class="col-lg-6 m-50">
+                        <h1 class="text-center text-lg-start banner-start">Expert Legal Services for
+                            <span style="color: #4b6fed;">Section 125 CrPC</span> Cases
+                        </h1>
+                        <p class="py-3 pt-1 pb-3 banner-para">Navigating a Section 125 CrPC case can be challenging. Our
+                            expert legal team is
+                            here to
+                            provide professional legal drafting and advice, ensuring you receive the best possible
+                            outcome
+                        </p>
+                        <button type="button" class="btn custom-btn ">Start Now <i class="fa-solid fa-play" style="font-size: 13px; margin-left: 
+                        7px;"></i></button>
+                    </div>
+                    <div class="col-lg-6 d-flex justify-content-center banner-img justify-content-lg-end">
+                        <img src="assets\Images\bannerimage.webp" alt="">
+                    </div>
+                </div>
+                <img src="assets\Images\curvedline.webp" class="curved-line" alt="">
+            </div>
+        </section>
+
+        <!--About Us  -->
+
+        <section class="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="text-center text-uppercase fw-bold py-4 about-heading">About Us</h2>
+                        <p class="about-desc">At <span style="color: #4b6fed;" class="fw-bold">SPEAKLEGAL</span>, we
+                            specialize in
+                            offering comprehensive legal services for clients facing Section 125 CrPC cases. With a team
+                            of seasoned legal experts, we provide personalized solutions tailored to your unique needs.
+                        </p>
+                    </div>
+                    <div class="col-12 about-middle-col">
+                        <div
+                            class="col-12 col-lg-4 col-md-4 d-flex justify-content-center align-items-center position-relative">
+                            <img src="assets\Images\hammer.webp" class="hammer" alt="">
+                            <img src="assets/Images/rightcurvabout.png" class="rightcurvabout" alt="">
+                        </div>
+                        <div>
+                            <div class="col-12 aim-col">
+                                <div class="aim-center-content d-flex gap-4">
+                                    <div class="aim-img-box">
+                                        <img src="assets\Images\aim.png" class="aim-img" alt="">
+                                    </div>
+                                    <h3 style="color: #4b6fed;" class="fw-bold sec-title">Our Aim -</h3>
+                                </div>
+                                <p class="text-center">Our mission is to deliver top-tier legal services that help our
+                                    clients navigate their legal challenges with confidence and ease.</p>
+                            </div>
+                            <div class="hifive-section"><img src="assets\Images\hifive.webp" class="hifive" alt="">
+                            </div>
+                        </div>
+                        <div class="col-4 position-relative">
+                            <img src="assets\Images\risk.webp" class="risk" style="width: 30%;" alt="">
+                            <img src="assets/Images/leftcurvabout.png" alt="" class="leftcurvabout">
+                        </div>
+                    </div>
+                </div>
+                <img src="assets\Images\curvedbgtop.webp" class="curved-bg" alt="">
+            </div>
+            <!--  -->
+        </section>
+        <section class="services">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 services">
+                        <h3 class="text-center sec-title pb-2">Our Services</h3>
+                        <h2 class="text-center fw-bolder  services-sec-heading">Our Professional Services</h2>
+                        <p class="text-center fw-light serv-desc">We offer a range of services tailored to suit all your
+                            needs, ensuring <br> comprehensive solutions for every requirement.</p>
+                    </div>
+                </div>
+                <div class="row py-3 services-row-1">
+                    <div class="col-lg-6 services-banner-first-left">
+                        <img src="assets\Images\servicebannerimg.webp" class="service-banner" alt="">
+                    </div>
+                    <div class="col-lg-6 services-banner-first-right pt-lg-0 pt-5">
+                        <h4 class=" services-sm-heading">Legal Drafting Services -</h4>
+                        <p class="service-sm-para">Expertly crafted legal documents to strengthen your case.</p>
+                    </div>
+                </div>
+
+                <div class="row py-3 services-row-2 ">
+                    <div class="col-lg-6 services-banner-second-right pt-lg-0 pt-5">
+                        <h4 class=" services-sm-heading">Legal Advice on Call -</h4>
+                        <p class="service-sm-para">Immediate access to professional legal advice whenever you need it.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 services-banner-second-left ">
+                        <img src="assets\Images\servicebanner2.webp" class="w-100" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Working -->
+        <section class="working">
+            <div class="container">
+                <h3 class="text-center sec-title">How it works?</h3>
+                <h2 class="text-center sec-heading">Discover our <span style="color: #e8505b;">seamless</span> process
+                    in just <br> three simple steps.</h2>
+                <div class="row pt-5">
+                    <div class="col-lg-4 col-md-12 working-col  position-relative">
+                        <img src="assets\Images\1.webp" class="number-img" alt="">
+                        <h4 class="py-4">Contact Us</h4>
+                        <p>Reach out to us through our contact form or call us directly.</p>
+                        <img src="assets/Images/workingcurv.png" class="workingcurv1" alt="">
+                    </div>
+                    <div class="col-lg-4 col-md-12  working-col">
+                        <img src="assets\Images\2.webp" class="number-img" alt="">
+                        <h4 class="py-4">Brief Explanation</h4>
+                        <p>Provide a brief overview of your case for initialassessment.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-12 working-col position-relative">
+                        <img src="assets\Images\3.webp" class="number-img" alt="">
+                        <h4 class="py-4">Receive the Draft Copy</h4>
+                        <p>Get a professionally drafted legal document tailored to your specific needs</p>
+                        <img src="assets/Images/workingcurv.png" class="workingcurv2" alt="">
+                    </div>
+                </div>
+                <img src="assets\Images\curvedbgtop.webp" class="curved-bg-working" alt="">
+            </div>
+        </section>
+        <!-- GET STARTED -->
+        <section class="get-started">
+            <div class="container">
+                <div class="row gap-5 gap-lg-0 gap-md-0 flex-column-reverse flex-md-row">
+                    <div class="col-lg-6 col-md-12 get-started-col-1">
+                        <h2 class=" text-center text-lg-start  sec-heading">Ready to take the next
+                            step? Click below to <span style="color: #e8505b;">get started.</span></h2>
+                        <div class="center-button">
+                            <div class="two-layer-btn">
+                                <a href="#" class="btn under-layer">Start Now</a>
+                                <span><img src="assets\Images\play.webp" alt=""></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6  col-md-12 get-started-col-2">
+                        <img src="assets\Images\started.webp" class="get-started-img" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Testimonials -->
+        <section class="customer position-relative">
+            <div class="container">
+                <div class="row d-flex justify-content-center align-items-center">
+                    <h3 class="text-center sec-title mb-4">Happy Customers</h3>
+                    <h2 class="text-center testimonial-head-1 sec-heading">See Why Our <span
+                            style="color: #4b6fed;">Customers</span> Love Us - </h2>
+                    <h2 class="text-center testimonial-head-2 sec-heading">Hear Their Stories and Experiences</h2>
+                    <div class="col-12 slider-column">
+                        <div class="owl-carousel owl-theme">
+                            <div class="item">
+                                <div class="item-head">
+                                    <div class="avatar">
+                                        J
+                                    </div>
+                                    <div class="name-box">
+                                        <div class="rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <h4>John Doe</h4>
+                                    </div>
+                                </div>
+                                <p class="text-center review text-white">The team at Speaklegal helped me navigate my
+                                    Section 125
+                                    CrPC case with ease and confidence. Their expertise is unmatched!</p>
+                            </div>
+                            <div class="item">
+                                <div class="item-head">
+                                    <div class="avatar avatar-2">
+                                        J
+                                    </div>
+                                    <div class="name-box">
+                                        <div class="rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star text-white"></i>
+                                        </div>
+                                        <h4>Jane Smith</h4>
+                                    </div>
+                                </div>
+                                <p class="text-center review text-white">I received professional, timely, and effective
+                                    legal
+                                    advice that made all the difference in my case.</p>
+                            </div>
+                            <div class="item">
+                                <div class="item-head">
+                                    <div class="avatar avatar-3">
+                                        E
+                                    </div>
+                                    <div class="name-box">
+                                        <div class="rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star "></i>
+                                        </div>
+                                        <h4>Emily Davis</h4>
+                                    </div>
+                                </div>
+                                <p class="text-center review text-white">I received professional, timely, and effective
+                                    legal
+                                    advice that made all the difference in my case.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="assets\Images\curvedbgtop.webp" class="testimonial-bg" alt="">
+        </section>
+
+        <section class="latest-posts">
+            <div class="container posts">
+                <h2 class="py-4">Latest Posts</h2>
+                <div class="row">
+                    <div class="col-lg-4 col-md-12 posts-heading">
+                        <img src="assets\Images\post-1.webp" alt="">
+                        <h3>Understanding Section 125 CrPC: A Comprehensive Guide</h3>
+                    </div>
+                    <div class="col-lg-4 col-md-12 posts-heading">
+                        <img src="assets\Images\post-2.webp" alt="">
+                        <h3>Top Tips for a Successful Legal Draft</h3>
+                    </div>
+                    <div class="col-lg-4 col-md-12 posts-heading">
+                        <img src="assets\Images\post-3.webp" alt="">
+                        <h3>When to Seek Legal Advice for Your Section 125 Case</h3>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-12 d-flex justify-content-center py-4">
+                        <button type="button" class="  post-btn" style="margin: 0 !important;">Explore More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--PAGE CONTENT END-->
+        <!--FOOTER HERE-->
+        <footer class="position-relative">
+            <div class="container px-0 px-lg-5 px-md-4  py-5">
+                <div class="row gap-3 gap-lg-0 gap-md-0 align-items-center">
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <h2 class="sec-heading text-white footer-para">Discover our full range of services
+                            and see what <span style="color: #e8505b;">we can do</span> for you.
+                        </h2>
+                    </div>
+                    <div
+                        class="col-lg-6 col-md-6 col-12 d-flex justify-content-lg-end justify-content-md-end justify-content-start h-100">
+                        <a href="#" class="footer-btn">Get Started Now</a>
+                    </div>
+                </div>
+            </div>
+            <img src="assets\Images\bluebackcurve.webp" class="footer-bg" alt="">
+            <div class="container footer-bottom py-5 border-0">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-12 logo-sec pb-5">
+                        <a class="logo footer-logo" href="index.html">SPEAKLEGAL</a>
+                        <p class="footer-copyright">All rights reserved © Speaklegal 2024</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12  footer-service-links">
+                        <h2 class="sec-heading text-white pb-4 footer-title">
+                            Our Services
+                        </h2>
+                        <a href="legaldrafting.html">
+                            <p>Legal Drafting Services</p>
+                        </a>
+                        <a href="#">
+                            <p>Divorce and separation advice</p>
+                        </a>
+                        <a href="#">
+                            <p>Maintenance Case Consultation</p>
+                        </a>
+                        <a href="#">
+                            <p>Litigation strategy</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 link-sec py-5 py-lg-0 py-md-0 page-links-column">
+                        <h2 class="sec-heading text-white d-lg-none d-md-none footer-title">Learn More</h2>
+                        <div class="footer-links d-flex flex-column gap-4 py-5 py-lg-0 py-md-0">
+                            <a href="privacy.html">Privacy Policy </a>
+                            <a href="terms.html">Terms of Service</a>
+                            <a href="#">Refund Policy</a>
+                            <a href="#">Cookie Policy </a>
+                            <a href="#">Disclaimer</a>
+                            <a href="#">Copyright Policy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+    </div>
+    <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>-->
+    <!-- <script src="assets\js\bootstrap.min.js"></script>
+    <script src="assets\js\bootstrap.bundle.min.js"></script> -->
+    <script src="assets\js\jquery-3.7.1.min.js"></script>
+    <script src="assets\OwlCarousel2-2.3.4\dist\owl.carousel.min.js"></script>
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 1,
+                    center: true
+                },
+                768: {
+                    items: 2
+                },
+                1024: {
+                    items: 3
+                }
+            }
+        })
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel();
+        });
+    </script>
+    <script>
+        // let faXmark = document.querySelector(".fa-xmark");
+        // let mobNav = document.querySelector(".navbar-collapse");
+        // mobNavToggler = document.getElementsByClassName("navbar-toggler-icon");
+
+        // mobNavToggler.addEventListener("click", function () {
+        //     mobNav.classList.add("show");
+        //     console.log(mobNavToggler)
+        // })
+
+        // faXmark.addEventListener("click", function () {
+        //     mobNav.classList.remove("show");
+        //     alert("open")
+        // });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            let faXmark = document.querySelector(".fa-xmark");
+            let mobNav = document.querySelector(".navbar-collapse");
+            let mobNavToggler = document.querySelector(".navbar-toggler-icon");
+            let main = document.querySelector("#main")
+
+            // MObile Nav Show
+            if (mobNavToggler) {
+                mobNavToggler.addEventListener("click", function () {
+                    mobNav.classList.add("show");
+                    main.style.overflowY = "hidden"
+                });
+            }
+
+            // Mobile Nav Close
+            if (faXmark) {
+                faXmark.addEventListener("click", function () {
+                    mobNav.classList.remove("show");
+                    document.body.style.overflowY = "auto"
+                });
+            }
+        });
+
+
+        let dropdownToggler = document.querySelector(".dropdown-toggler");
+        let dropdown = document.querySelector(".dropdown-menu");
+
+        dropdownToggler.addEventListener("click", function () {
+            dropdown.classList.toggle("show");
+            dropdownToggler.classList.toggle("rotate");
+        });
+
+        // MOBILE NAVIGATION
+        let mobDropdownToggler = document.querySelector(".mob-nav-arrow");
+        let mobDropdown = document.querySelector("#internal-link-box");
+        let serviceIconBox = document.querySelector(".service-icon-box");
+
+        mobDropdownToggler.addEventListener("click", function () {
+            mobDropdownToggler.classList.toggle("rotate");
+            serviceIconBox.classList.toggle("icon-height");
+            mobDropdown.classList.toggle("mob-show");
+
+        })
+
+    </script>
+
+</body>
+
+</html>
